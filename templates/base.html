@@ -1,0 +1,101 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<meta name="description" content="{% block description %}  {% endblock %}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}  {% endblock %}</title>
+<link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/flexslider.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/jquery.fancybox.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/responsive.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/font-icon.css' %}">
+<link rel="stylesheet" href="{% static 'website/https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' %}">
+</head>
+
+
+<!-- header section -->
+
+<section class="banner" role="banner">
+  <header id="header">
+    <div class="header-content clearfix"> <a class="logo" href="homepage.html"><i class="icon icon-anchor"></i> Dentist</a>
+      <nav class="navigation" role="navigation">
+        <ul class="primary-nav">
+		 <li><a href="/">Home</a></li>    <!-- banner-->
+          <li><a href="/treatment/">Treatments</a></li>	<!-- services-->
+         <li><a href="/about/">About</a></li> <!-- content-3-10-->
+          <li><a href="/gallery/">Gallery</a></li>
+          <li><a href="/ourteam/">Our Team</a></li>  <!-- teams-->
+          <li><a href="/testimonials/">Testimonials</a></li>
+          <li><a href="/contact/">Contact</a></li>      <!--{% url 'contact' %}-->
+        </ul>
+      </nav>
+      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+  </header>
+</section>
+
+<!-- header section -->
+
+
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+<br><br><br><br><br><br><br><br><br>
+<!-- Footer section -->
+<footer class="footer">
+<div class="container-fluid">
+<div id="map-row" class="row">
+    <div class="col-xs-12">
+
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59035.96424819244!2d91.80000457910157!3d22.363151000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ad277c45ad9fa9%3A0xf0758c476958d6fe!2sChittagong%20Dental%20Clinic!5e0!3m2!1sen!2sbd!4v1609225528959!5m2!1sen!2sbd" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+          <div id="map-overlay" class="col-xs-5 col-xs-offset-6" style="">
+    		<h2 style="margin-top:0;color:#fff;">Contact us</h2>
+    		<address style="color:#fff;">
+    			<strong>Company name</strong><br>
+    			54, Katalganj Hathazari Road, Panchlaish, Chattogram 4203<br>
+    			<abbr title="Phone">Tel:</abbr> +8801711376349
+    		</address>
+			  © 2020 Chittagong Dental Clinic. <a href="https://webthemez.com/tag/free" target="_blank">Free HTML Templates</a> by WebThemez.com
+    	</div>
+    </div>
+	 </div>
+</div>
+</footer>
+<!-- Footer section -->
+
+<!-- JS FILES -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'website/js/jquery.flexslider-min.js' %}"></script>
+<script src="{% static 'website/js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'website/js/modernizr.js' %}"></script>
+<script src="{% static 'website/js/main.js' %}"></script>
+<script type="text/javascript" src="{% static 'website/js/jquery.contact.js' %}"></script>
+<script type="text/javascript" src="{% static 'website/js/jquery.devrama.slider.min-0.9.4.js' %}"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('.slider-banner').DrSlider({
+				'transition': 'fade',
+				showNavigation: false,
+				progressColor: "#03A9F4"
+			});
+		});
+	</script>
+</body>
+</html>
